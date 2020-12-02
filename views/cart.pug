@@ -15,7 +15,8 @@ block content
           td=item.name
           td=item.price
           td=item.members
-          td-item.country
+          td=item.country
+          td
             a(href="/products/cart/remove"+item._id, class="btn btn-danger") Remove Item
     tfoot
       tr
