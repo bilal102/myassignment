@@ -1,0 +1,17 @@
+extends ../layout 
+block content
+    h1 Send New Request
+    form(action="/products/add",method="post")
+        .form-group
+            label(for="name") Name
+            input#name(type="text" class="form-control" name="name")
+        .form-group
+            label(for="price") Total Budget
+            input#price(type="text" class="form-control" name="price")
+        .form-group
+            label(for="members") Total Members
+            input#members(type="text" class="form-control" name="members")
+        .form-group
+            label(for="country") Country
+            input#country(type="text" class="form-control" name="country")        
+        input(type="submit", value="Submit" class="btn btn-info")    

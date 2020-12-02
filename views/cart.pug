@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  h1 My Shoping Cart
+  table.table
+    thead
+      th Name
+      th Total Budget
+      th Total Members
+      th Country
+      th Action
+    tbody
+      each item in cart
+        tr
+          td=item.name
+          td=item.price
+          td=item.members
+          td-item.country
+            a(href="/products/cart/remove"+item._id, class="btn btn-danger") Remove Item
+    tfoot
+      tr
+        td
+        td
+        td
+        td
+        td
